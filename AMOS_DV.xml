@@ -11,8 +11,8 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">52120</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="portNumber" type="int">52177</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_accumulator___frames_8b79ca22a829440786fec488051eed96/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_accumulator___frames_8b79ca22a829440786fec488051eed96/inputs/output0/">
@@ -31,7 +31,7 @@
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
             <attr key="portNumber" type="int">52068</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___events_4f8fb4023e914f89a2b1f7ab3384b6a3/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___events_4f8fb4023e914f89a2b1f7ab3384b6a3/inputs/output0/">
@@ -40,7 +40,7 @@
             </node>
         </node>
         <node name="_visualizer_capture___frames_3502a64cc6d14410bba940314975c8ba" path="/mainloop/_visualizer_capture___frames_3502a64cc6d14410bba940314975c8ba/">
-            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":8,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
+            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":4,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
             <attr key="ipAddress" type="string">127.0.0.1</attr>
@@ -49,31 +49,12 @@
             <attr key="maxConnectionsBacklog" type="int">5</attr>
             <attr key="maxDataBacklog" type="int">5</attr>
             <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">52122</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="portNumber" type="int">52179</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="timeout" type="long">0</attr>
             <node name="inputs" path="/mainloop/_visualizer_capture___frames_3502a64cc6d14410bba940314975c8ba/inputs/">
                 <node name="output0" path="/mainloop/_visualizer_capture___frames_3502a64cc6d14410bba940314975c8ba/inputs/output0/">
                     <attr key="from" type="string">capture[frames]</attr>
-                </node>
-            </node>
-        </node>
-        <node name="_visualizer_decimation___events_b514bdde1b404e34a52f4d6d611894dc" path="/mainloop/_visualizer_decimation___events_b514bdde1b404e34a52f4d6d611894dc/">
-            <attr key="_guiSupport" type="string">{"visualizerX":5,"visualizerY":7,"size":5,"minimized":true,"boxX":400.0,"boxY":500.0}</attr>
-            <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
-            <attr key="compression" type="string">NONE</attr>
-            <attr key="ipAddress" type="string">127.0.0.1</attr>
-            <attr key="logLevel" type="string">INFO</attr>
-            <attr key="maxConcurrentConnections" type="int">10</attr>
-            <attr key="maxConnectionsBacklog" type="int">5</attr>
-            <attr key="maxDataBacklog" type="int">5</attr>
-            <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
-            <attr key="portNumber" type="int">0</attr>
-            <attr key="running" type="bool">false</attr>
-            <attr key="timeout" type="long">0</attr>
-            <node name="inputs" path="/mainloop/_visualizer_decimation___events_b514bdde1b404e34a52f4d6d611894dc/inputs/">
-                <node name="output0" path="/mainloop/_visualizer_decimation___events_b514bdde1b404e34a52f4d6d611894dc/inputs/output0/">
-                    <attr key="from" type="string">decimation[events]</attr>
                 </node>
             </node>
         </node>
@@ -96,7 +77,26 @@
                 </node>
             </node>
         </node>
-        <node name="_visualizer_knoise___events_7fc69b4fecd24b3f9fe21fc3d647f552" path="/mainloop/_visualizer_knoise___events_7fc69b4fecd24b3f9fe21fc3d647f552/">
+        <node name="_visualizer_input_file___events_6898a137d33240c6bec03cee19283241" path="/mainloop/_visualizer_input_file___events_6898a137d33240c6bec03cee19283241/">
+            <attr key="_guiSupport" type="string">{"visualizerX":12,"visualizerY":8,"size":4,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
+            <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
+            <attr key="compression" type="string">NONE</attr>
+            <attr key="ipAddress" type="string">127.0.0.1</attr>
+            <attr key="logLevel" type="string">INFO</attr>
+            <attr key="maxConcurrentConnections" type="int">10</attr>
+            <attr key="maxConnectionsBacklog" type="int">5</attr>
+            <attr key="maxDataBacklog" type="int">5</attr>
+            <attr key="moduleLibrary" type="string">dv_output_net_tcp_server</attr>
+            <attr key="portNumber" type="int">0</attr>
+            <attr key="running" type="bool">false</attr>
+            <attr key="timeout" type="long">0</attr>
+            <node name="inputs" path="/mainloop/_visualizer_input_file___events_6898a137d33240c6bec03cee19283241/inputs/">
+                <node name="output0" path="/mainloop/_visualizer_input_file___events_6898a137d33240c6bec03cee19283241/inputs/output0/">
+                    <attr key="from" type="string">input_file[events]</attr>
+                </node>
+            </node>
+        </node>
+        <node name="_visualizer_knoise___events_8a71c83f27a54112a78604be82cae02a" path="/mainloop/_visualizer_knoise___events_8a71c83f27a54112a78604be82cae02a/">
             <attr key="_guiSupport" type="string">{"visualizerX":6,"visualizerY":6,"size":6,"minimized":false,"boxX":400.0,"boxY":500.0}</attr>
             <attr key="_priorityAttributes" type="string">compression,ipAddress,portNumber</attr>
             <attr key="compression" type="string">NONE</attr>
@@ -109,8 +109,8 @@
             <attr key="portNumber" type="int">0</attr>
             <attr key="running" type="bool">true</attr>
             <attr key="timeout" type="long">0</attr>
-            <node name="inputs" path="/mainloop/_visualizer_knoise___events_7fc69b4fecd24b3f9fe21fc3d647f552/inputs/">
-                <node name="output0" path="/mainloop/_visualizer_knoise___events_7fc69b4fecd24b3f9fe21fc3d647f552/inputs/output0/">
+            <node name="inputs" path="/mainloop/_visualizer_knoise___events_8a71c83f27a54112a78604be82cae02a/inputs/">
+                <node name="output0" path="/mainloop/_visualizer_knoise___events_8a71c83f27a54112a78604be82cae02a/inputs/output0/">
                     <attr key="from" type="string">knoise[events]</attr>
                 </node>
             </node>
@@ -135,12 +135,12 @@
             </node>
         </node>
         <node name="accumulator" path="/mainloop/accumulator/">
-            <attr key="_guiSupport" type="string">{"boxX":100.0,"boxY":500.0}</attr>
-            <attr key="_priorityAttributes" type="string">accumulationTime</attr>
+            <attr key="_guiSupport" type="string">{"boxX":150.0,"boxY":500.0}</attr>
+            <attr key="_priorityAttributes" type="string">accumulationTime,accumulationNumber,decayFunction,decayParam</attr>
             <attr key="accumulationNumber" type="int">100000</attr>
-            <attr key="accumulationTime" type="int">378</attr>
+            <attr key="accumulationTime" type="int">617</attr>
             <attr key="colorDemosaicing" type="bool">false</attr>
-            <attr key="decayFunction" type="string">Exponential</attr>
+            <attr key="decayFunction" type="string">None</attr>
             <attr key="decayParam" type="double">1000000.0</attr>
             <attr key="eventContribution" type="float">0.15</attr>
             <attr key="logLevel" type="string">INFO</attr>
@@ -149,7 +149,7 @@
             <attr key="moduleLibrary" type="string">dv_accumulator</attr>
             <attr key="neutralPotential" type="float">0.0</attr>
             <attr key="rectifyPolarity" type="bool">false</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="sliceMethod" type="string">TIME</attr>
             <attr key="synchronousDecay" type="bool">false</attr>
             <node name="inputs" path="/mainloop/accumulator/inputs/">
@@ -162,11 +162,11 @@
             <attr key="_guiSupport" type="string">{"boxX":300.0,"boxY":50.0}</attr>
             <attr key="_priorityAttributes" type="string">dataMode</attr>
             <attr key="busNumber" type="int">0</attr>
-            <attr key="dataMode" type="string">Events only</attr>
+            <attr key="dataMode" type="string">Events+Frames</attr>
             <attr key="devAddress" type="int">0</attr>
             <attr key="logLevel" type="string">WARNING</attr>
             <attr key="moduleLibrary" type="string">dv_davis</attr>
-            <attr key="running" type="bool">true</attr>
+            <attr key="running" type="bool">false</attr>
             <attr key="serialNumber" type="string">00000201</attr>
             <node name="DAVIS346" path="/mainloop/capture/DAVIS346/">
                 <node name="bias" path="/mainloop/capture/DAVIS346/bias/">
@@ -268,16 +268,16 @@
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="DiffBn" path="/mainloop/capture/DAVIS346/bias/DiffBn/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,enabled,fineValue</attr>
                         <attr key="coarseValue" type="int">4</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
-                        <attr key="fineValue" type="int">174</attr>
+                        <attr key="fineValue" type="int">39</attr>
                         <attr key="sex" type="string">N</attr>
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="IFRefrBn" path="/mainloop/capture/DAVIS346/bias/IFRefrBn/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,enabled,fineValue</attr>
                         <attr key="coarseValue" type="int">5</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
@@ -313,7 +313,7 @@
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="OffBn" path="/mainloop/capture/DAVIS346/bias/OffBn/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue,enabled</attr>
                         <attr key="coarseValue" type="int">4</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
@@ -322,7 +322,7 @@
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="OnBn" path="/mainloop/capture/DAVIS346/bias/OnBn/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,enabled,fineValue</attr>
                         <attr key="coarseValue" type="int">5</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
@@ -349,7 +349,7 @@
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="PrBp" path="/mainloop/capture/DAVIS346/bias/PrBp/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,enabled,fineValue</attr>
                         <attr key="coarseValue" type="int">2</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
@@ -358,7 +358,7 @@
                         <attr key="type" type="string">Normal</attr>
                     </node>
                     <node name="PrSFBp" path="/mainloop/capture/DAVIS346/bias/PrSFBp/">
-                        <attr key="_priorityAttributes" type="string">coarseValue,fineValue</attr>
+                        <attr key="_priorityAttributes" type="string">coarseValue,enabled,fineValue</attr>
                         <attr key="coarseValue" type="int">1</attr>
                         <attr key="currentLevel" type="string">Normal</attr>
                         <attr key="enabled" type="bool">true</attr>
@@ -423,6 +423,7 @@
                 <attr key="AutoExposure" type="bool">true</attr>
                 <attr key="EndColumn" type="int">345</attr>
                 <attr key="EndRow" type="int">259</attr>
+                <attr key="Exposure" type="int">4000</attr>
                 <attr key="FrameInterval" type="int">40000</attr>
                 <attr key="FrameMode" type="string">Default</attr>
                 <attr key="GlobalShutter" type="bool">true</attr>
@@ -530,21 +531,8 @@
                 <attr key="_priorityAttributes" type="string"/>
             </node>
         </node>
-        <node name="decimation" path="/mainloop/decimation/">
-            <attr key="_guiSupport" type="string">{"boxX":550.0,"boxY":300.0}</attr>
-            <attr key="_priorityAttributes" type="string">percentage</attr>
-            <attr key="logLevel" type="string">INFO</attr>
-            <attr key="moduleLibrary" type="string">dv_decimation</attr>
-            <attr key="percentage" type="int">100</attr>
-            <attr key="running" type="bool">false</attr>
-            <node name="inputs" path="/mainloop/decimation/inputs/">
-                <node name="events" path="/mainloop/decimation/inputs/events/">
-                    <attr key="from" type="string">capture[events]</attr>
-                </node>
-            </node>
-        </node>
         <node name="dvsnoisefilter" path="/mainloop/dvsnoisefilter/">
-            <attr key="_guiSupport" type="string">{"boxX":300.0,"boxY":300.0}</attr>
+            <attr key="_guiSupport" type="string">{"boxX":400.0,"boxY":300.0}</attr>
             <attr key="_priorityAttributes" type="string">backgroundActivityEnable,backgroundActivityTime</attr>
             <attr key="backgroundActivityCheckPolarity" type="bool">false</attr>
             <attr key="backgroundActivityEnable" type="bool">true</attr>
@@ -568,8 +556,37 @@
                 </node>
             </node>
         </node>
+        <node name="export_csv" path="/mainloop/export_csv/">
+            <attr key="_guiSupport" type="string">{"boxX":200.0,"boxY":650.0}</attr>
+            <attr key="_priorityAttributes" type="string">fileName</attr>
+            <attr key="fileName" type="string">C:\Users\brian\Desktop\Check.csv</attr>
+            <attr key="logLevel" type="string">INFO</attr>
+            <attr key="moduleLibrary" type="string">dv_export_csv</attr>
+            <attr key="running" type="bool">false</attr>
+            <node name="inputs" path="/mainloop/export_csv/inputs/">
+                <node name="events" path="/mainloop/export_csv/inputs/events/">
+                    <attr key="from" type="string">capture[events]</attr>
+                </node>
+            </node>
+        </node>
+        <node name="input_file" path="/mainloop/input_file/">
+            <attr key="_guiSupport" type="string">{"boxX":600.0,"boxY":50.0}</attr>
+            <attr key="_priorityAttributes" type="string">file,loop</attr>
+            <attr key="file" type="string">C:\Users\brian\Desktop\dvSave-2022_09_20_10_35_00.aedat4</attr>
+            <attr key="logLevel" type="string">INFO</attr>
+            <attr key="loop" type="bool">false</attr>
+            <attr key="mode" type="string">timeInterval</attr>
+            <attr key="moduleLibrary" type="string">dv_input_file</attr>
+            <attr key="pause" type="bool">false</attr>
+            <attr key="running" type="bool">false</attr>
+            <attr key="seek" type="long">5619500</attr>
+            <attr key="seekEnd" type="long">5669999</attr>
+            <attr key="seekStart" type="long">0</attr>
+            <attr key="timeDelay" type="long">10000</attr>
+            <attr key="timeInterval" type="long">20000</attr>
+        </node>
         <node name="knoise" path="/mainloop/knoise/">
-            <attr key="_guiSupport" type="string">{"boxX":800.0,"boxY":300.0}</attr>
+            <attr key="_guiSupport" type="string">{"boxX":650.0,"boxY":300.0}</attr>
             <attr key="_priorityAttributes" type="string">deltaT,supporters</attr>
             <attr key="deltaT" type="int">1000</attr>
             <attr key="logLevel" type="string">INFO</attr>
@@ -582,8 +599,33 @@
                 </node>
             </node>
         </node>
+        <node name="output_file" path="/mainloop/output_file/">
+            <attr key="_guiSupport" type="string">{"boxX":500.0,"boxY":650.0}</attr>
+            <attr key="_priorityAttributes" type="string">compression,directory,prefix</attr>
+            <attr key="compression" type="string">LZ4</attr>
+            <attr key="directory" type="string">C:\Users\brian</attr>
+            <attr key="logLevel" type="string">INFO</attr>
+            <attr key="moduleLibrary" type="string">dv_output_file</attr>
+            <attr key="prefix" type="string">dvSave</attr>
+            <attr key="running" type="bool">false</attr>
+            <attr key="timeout" type="long">0</attr>
+            <node name="inputs" path="/mainloop/output_file/inputs/">
+                <node name="output0" path="/mainloop/output_file/inputs/output0/">
+                    <attr key="from" type="string">capture[events]</attr>
+                </node>
+                <node name="output1" path="/mainloop/output_file/inputs/output1/">
+                    <attr key="from" type="string"/>
+                </node>
+                <node name="output2" path="/mainloop/output_file/inputs/output2/">
+                    <attr key="from" type="string"/>
+                </node>
+                <node name="output3" path="/mainloop/output_file/inputs/output3/">
+                    <attr key="from" type="string"/>
+                </node>
+            </node>
+        </node>
         <node name="ynoise" path="/mainloop/ynoise/">
-            <attr key="_guiSupport" type="string">{"boxX":50.0,"boxY":300.0}</attr>
+            <attr key="_guiSupport" type="string">{"boxX":150.0,"boxY":300.0}</attr>
             <attr key="_priorityAttributes" type="string">deltaT,lParam,threshold</attr>
             <attr key="deltaT" type="int">10000</attr>
             <attr key="lParam" type="int">5</attr>
