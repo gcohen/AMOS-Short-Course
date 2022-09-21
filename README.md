@@ -1,2 +1,3 @@
 # AMOS EBS Course
- Place to share code, materials, and data for AMOS short course here
+Code and data for AMOS Intro to EBS short course. 
+For course materials (presentation slides and tutorials) please access our course [Google Drive] (https://drive.google.com/drive/u/0/folders/1QQ-ZSQCME5z7DLCrxAtmJL4Zu5emq-LV)
