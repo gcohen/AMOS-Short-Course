@@ -1,0 +1,31 @@
+This directory contains the correlations between stars seen on the Gen3 and
+Gen4 camera and the Gaia DR2 star catalog.  There is one file per camera
+per night, and the file names are like
+	gXstarYYYY-MM-DD.csv
+where
+	X is 3 or 4 for Gen3 or Gen4
+	YYYY is the UT year of the night
+	MM is the UT month of the night
+	DD is the UT day of the night
+
+The columns of the CSV file are
+	(1) UT date string YYYY-MM-DDThh:mm:ss when the camera clock t=0
+		YYYY, MM, DD are UT year, month day
+		hh, mm, ss are UT time in hour, minute, second
+	(2) Microseconds of slice midpoint since t=0 (int)
+	(3) Column (float; pixel)
+	(4) Row (float; pixel)
+	(5) Mag (float; ZP - 2.5*log10(SExtractor counts), ZP is arbitrary)
+	(6) Gaia RA (double, J2000, degrees)
+	(7) Gaia Dec (double, J2000, degrees)
+	(8) Gaia mag (float, gaia_mag from catalog)
+
+The correlations were obtained by making time slices of the events 5 seconds
+wide, making a FITS image from the (col,row) of the + events, and submitting
+that image to SExtractor to measure the star positions and fluxes.  The
+brightest stars were fed to SExtractor to get the approximate mapping from
+(col,row) to (RA,Dec).  Finally, the list of all star (RA,Dec) was correlated
+with the Gaia catalog to provide the catalog (RA,Dec,Mag) which appear in
+this file.  Note that because the catalog (RA,Dec,Mag) are included, the same
+star can appear in multiple time slices as it drifts through the field of
+regard.

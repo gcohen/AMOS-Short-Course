@@ -1,0 +1,54 @@
+These files are for 3 different types of events found in the Gen3 and
+Gen4 images.  The file names are of the form
+	gXzzzYYYY-MM-DDThh.mm.ss.csv
+where
+	X is 3 or 4 for Gen3 or Gen4
+	zzz is the content of the file (below)
+	YYYY, MM, DD are the UT year, month, day of the night
+	hh, mm, ss are the UT hour, minute, second when the clock t=0
+
+The content of each file is
+	(1) usec - integer microsecond since t=0
+	(2) X - integer camera column
+	(3) Y - integer camera row
+	(4) P - 0 or 1 for - or + polarity events
+
+Note that in the original Prophesee files, a 32-bit signed integer is
+sufficient to hold all values of usec.  In merging the files to make the
+"geo" files, a 64-bit signed integer is needed because of the long
+duration a GEO satellite spends on the sensor.
+
+File Contents:
+
+"all"	These files are the RAW file produced by the camera decoded into
+	CSV format.  These files are included for "evt" files because
+	there may be more events in the streak than my software extracted.
+
+"evt"	These files contain the events associated with a streak believed
+	to be a true satellite.  My software used only + events (P=1) so
+	the - events (P=0) associated with the streak are missing.  These,
+	and possibly other events in the streak, can be extracted from
+	the "all" file.
+
+"geo"	These are synthetic "evt" files created for objects moving at
+	or near the GEO rate (15 arcsec/sec).  Because of the long
+	duration needed for the satellite to drift across the field
+	of regard, the GEO events were extracted from each data collection
+	and reformatted into a single file.  The reformatting did not
+	alter the (X,Y,P) values.  All it did was refer all times to the
+	t=0 epoch of the first observation - which is the same as that
+	in the file name.  As a result, the usec values can be (much) longer
+	than the 120 second integration time for each frame.  In extreme
+	cases, the usec value is larger than can be accommodated in a
+	32-bit signed integer (about 2000 usec), so the usec values need
+	to be read into 64-bit signed integers to avoid loss of precision.
+
+It is believed that 2 of the GEO satellites show flashing behavior.
+
+	g4geo2022-02-14T12.14.48.csv - period near 47.15 seconds
+	g4geo2022-02-19T06.02.31.csv - period near 53.853 seconds
+
+As a sanity check, all of the "evt" and "geo" streaks were correlated with
+the public satellite catalog.  All but a very few "evt" files correlate
+with well known satellites, so this suggests that the chronology is
+probably accurate to something like 1 second.
